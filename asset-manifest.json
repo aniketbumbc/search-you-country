@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/search-you-country/static/css/main.5cf37d2d.chunk.css",
+    "main.js": "/search-you-country/static/js/main.940603ef.chunk.js",
+    "main.js.map": "/search-you-country/static/js/main.940603ef.chunk.js.map",
+    "runtime-main.js": "/search-you-country/static/js/runtime-main.eea221d2.js",
+    "runtime-main.js.map": "/search-you-country/static/js/runtime-main.eea221d2.js.map",
+    "static/js/2.c3721e92.chunk.js": "/search-you-country/static/js/2.c3721e92.chunk.js",
+    "static/js/2.c3721e92.chunk.js.map": "/search-you-country/static/js/2.c3721e92.chunk.js.map",
+    "static/js/3.4fb0aa01.chunk.js": "/search-you-country/static/js/3.4fb0aa01.chunk.js",
+    "static/js/3.4fb0aa01.chunk.js.map": "/search-you-country/static/js/3.4fb0aa01.chunk.js.map",
+    "index.html": "/search-you-country/index.html",
+    "static/css/main.5cf37d2d.chunk.css.map": "/search-you-country/static/css/main.5cf37d2d.chunk.css.map",
+    "static/js/2.c3721e92.chunk.js.LICENSE.txt": "/search-you-country/static/js/2.c3721e92.chunk.js.LICENSE.txt",
+    "static/media/loader-dark.0f91fa5c.svg": "/search-you-country/static/media/loader-dark.0f91fa5c.svg",
+    "static/media/loader-light.f86e6db9.svg": "/search-you-country/static/media/loader-light.f86e6db9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eea221d2.js",
+    "static/js/2.c3721e92.chunk.js",
+    "static/css/main.5cf37d2d.chunk.css",
+    "static/js/main.940603ef.chunk.js"
+  ]
+}
