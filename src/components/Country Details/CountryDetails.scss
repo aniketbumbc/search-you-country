@@ -1,0 +1,139 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+@import '../../../styles/main';
+
+.countryDetails {
+  font-size: $detailsPage;
+  img {
+    width: 200px;
+    height: auto;
+  }
+}
+//styles for the back button
+.backBtn {
+  @include boxShadowGenerator($boxShadow);
+  border-radius: $secondaryBorderRadius;
+  display: inline-block;
+  font-size: $secondaryFontSize;
+  font-weight: $semiBoldFontWeight;
+  margin: 2rem 0 3rem 1.5rem;
+  padding: 0.6rem 1.6rem;
+  text-decoration: none;
+  transition: transform 0.1s ease-in-out;
+  i {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  @media screen and (min-width: $tabletBreakPoint) {
+    margin: 4rem 0 4rem 3rem;
+  }
+  @media screen and (min-width: 1395px) {
+    margin-left: 7rem;
+  }
+  @media screen and (hover: hover) {
+    &:hover {
+      font-weight: $extraBoldFontWeight;
+    }
+  }
+}
+
+.mainContainer {
+  flex-grow: 100;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem;
+  @media screen and(min-width: $tabletBreakPoint) {
+    padding: 0 3rem;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1395px) {
+    padding: 0 7rem 7rem 7rem;
+  }
+}
+
+.countryFlag {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  img {
+    @include boxShadowGenerator($boxShadow);
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+  @media screen and(min-width:1200px) {
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 3rem;
+  }
+}
+
+.countryDetails {
+  h1 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-weight: $semiBoldFontWeight;
+    span {
+      font-weight: $lightFontWeight;
+    }
+  }
+  @media screen and(min-width:$tabletBreakPoint) {
+    flex-basis: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
+}
+
+.mainDetails,
+.additionalDetails {
+  margin: 2.5rem 0;
+  p {
+    margin: 0.7rem 0;
+  }
+  width: 100%;
+}
+
+.languages {
+  span {
+    display: inline-block;
+    margin: 0 3px;
+  }
+  span:not(:last-child):after {
+    content: ',';
+  }
+  word-break: break-all;
+}
+
+.detailsContainer {
+  @media screen and(min-width:$tabletBreakPoint) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    div {
+      margin: 0;
+    }
+  }
+}
+
+.darkDetails {
+  color: darken($white, 25%);
+}
+.lightDetails {
+  color: lighten($veryDarkBlueLightMode, 10%);
+}
+.error {
+  margin: auto;
+}
+
+.mainLoader {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}

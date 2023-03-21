@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+@import '../../styles/fonts';
+@import '../../styles/main';
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.fa-ellipsis-h {
+  color: $darkGray;
+}
+
+.dark {
+  background: $veryDarkBlue;
+  color: $white;
+  * {
+    color: $white;
+  }
+}
+.light {
+  background: $veryLightGray;
+  color: $veryDarkBlueLightMode;
+  input {
+    color: $darkGray;
+  }
+}
+
+.darkThemeElements {
+  background: $darkBlue;
+  * {
+    color: $white;
+  }
+  input {
+    &::placeholder {
+      color: $white;
+    }
+  }
+}
+
+.lightThemeElements {
+  background: $white;
+}

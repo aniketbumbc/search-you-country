@@ -1,0 +1,47 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+.borderCountries {
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+  }
+}
+
+.bordersDisplay {
+  font-weight: $semiBoldFontWeight;
+  display: flex;
+  align-items: baseline;
+  padding-top: 30px;
+
+  a {
+    @include boxShadowGenerator($boxShadow);
+    border-radius: $secondaryBorderRadius;
+    padding: 0.3rem 1.4rem;
+    display: flex;
+    font-weight: $lightFontWeight;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 12px 12px 0;
+    @media screen and (hover: hover) {
+      &:hover {
+        font-weight: $semiBoldFontWeight;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:$mobileBreakPoint) {
+  .bordersDisplay {
+    display: inline;
+    a {
+      margin: 10px 6px 15px 0px;
+    }
+  }
+  .borderCountries {
+    div {
+      margin-left: 0px;
+    }
+  }
+}

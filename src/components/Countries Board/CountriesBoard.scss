@@ -1,0 +1,18 @@
+@import '../../../styles/variables';
+@import '../../../styles/main';
+
+.countriesBoard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: $homePageItems;
+  color: black;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.innerHeight {
+  flex-grow: 100;
+}

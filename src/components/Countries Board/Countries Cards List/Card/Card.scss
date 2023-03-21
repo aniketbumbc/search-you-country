@@ -1,0 +1,58 @@
+@import '../../../../../styles/variables';
+@import '../../../../../styles/mixins';
+
+.countryCard {
+  @include boxShadowGenerator($boxShadow);
+  height: 335px;
+  margin: 0;
+  width: 100%;
+  font-weight: $semiBoldFontWeight;
+  border-radius: $secondaryBorderRadius;
+  transition: transform 0.2s ease;
+  @media screen and(hover:hover) {
+    &:hover {
+      transform: scale(1.04);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 190px;
+  }
+
+  .cardBackground {
+    @include boxShadowGenerator($boxShadow);
+    border-radius: $secondaryBorderRadius $secondaryBorderRadius 0 0;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 138px;
+  }
+  .textContainer {
+    padding: 20px;
+    h2 {
+      margin: 0 0 0.8rem 0;
+    }
+
+    div {
+      margin: 0.3rem 0;
+      &:first-of-type {
+        margin-top: 0;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      span {
+        margin-left: 5px;
+        font-weight: $lightFontWeight;
+      }
+    }
+  }
+}
+
+.darkText {
+  color: darken($white, 25%);
+}
+.lightText {
+  color: lighten($veryDarkBlueLightMode, 10%);
+}
